@@ -1,7 +1,7 @@
 provider "aws" {
+  profile = "dhruv"
   region     = var.location
-  access_key = var.access_key
-  secret_key = var.secret_key
+  shared_credentials_file = "%UserProfile%/.aws/credentials"
 }
 
 resource "aws_instance" "ec2_example" {

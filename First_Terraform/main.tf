@@ -1,7 +1,7 @@
 provider "aws" {
   profile = "dhruv"
   region     = var.location
-  shared_credentials_file = "%UserProfile%/.aws/credentials"
+  shared_credentials_file = ["c:/Users/HP/.aws/credentials"]
 }
 
 resource "aws_instance" "ec2_example" {
